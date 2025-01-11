@@ -1,0 +1,93 @@
+:root {
+  --main-font: "Poiret One", serif;
+  --title-font: "Lexend Zetta", serif;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: #F2F2F2;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  z-index: 2;
+}
+.main div{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.title {
+  font-size: 4.5em;
+  text-align: center;
+  margin: 3% 0 0 3%;
+  font-family: var(--title-font);
+  max-width: 70vw;
+}
+.main p {
+  font-size: 1.25em;
+  margin-top: 30px;
+  padding: 0 10%;
+  font-family: var(--main-font);
+  display: flex;
+}
+.author {
+  width: 70%;
+  text-align: right;
+  padding: 25px 0;
+  font-size: 1em;
+  font-family: var(--main-font);
+  font-weight: bold;
+}
+.author::before{
+  content: '-';
+}
+#date{
+  color: #F2F2F2;
+  background-color: transparent;
+  border: none;
+  height: auto;
+  font-size: 3em;
+  padding: 20px 0;
+  font-family: var(--main-font);
+}
+::-webkit-calendar-picker-indicator{
+  display: none;
+}
+.button{
+  width: 300px;
+  height: 50%;
+  margin: auto 0;
+  background-color: rgba(0, 0, 0, 0.26);
+  border: none;
+  color: #F2F2F2;
+  font-family: var(--main-font);
+  font-size: 2em;
+  font-weight: bold;
+  transition: 1s;
+}
+.button:hover{
+  background-color: #000;
+}
+.dark{
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(#00000025, #000);
+  position: absolute;
+  top: 0;
+  z-index: 1;
+} 
+
+.img{
+  width: 200px;
+  border-radius: 18px;
+  transition: 1s;
+}
+
